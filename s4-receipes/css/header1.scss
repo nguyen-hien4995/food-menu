@@ -1,0 +1,92 @@
+/*Top bar*/
+
+.top-bar {
+
+    color: rgb(177, 170, 170);
+    background-color: deeppink;
+
+    &__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    &__icon-list {
+    display: flex;
+    justify-content: row wrap;
+    align-items: center;
+    }
+
+    &__icon-list > li {
+        list-style-type: none;
+        margin: 8px;
+    }
+
+    &__icon-list > li > a {
+        color: white;
+    }
+
+    &__links-wrapper {
+    padding: 0 auto;
+    font-weight: bold;
+    color: white;
+    }
+
+    &__links-wrapper > a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/*Top nav*/
+
+.top-nav {
+
+    &__logo-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    }
+
+    &__logo {
+    display: flex;
+    justify-content: row wrap;
+    align-items: flex-start;
+    }
+
+    &__menu-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: row wrap;
+    }
+
+    &__menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-size:20px;
+    font-weight: bold;
+    margin-right: 5px;
+    }
+
+    &__menu li {
+        padding: 16px;
+    }
+
+    &__search {
+    background:deeppink;
+    color: white;
+    height: 37px;
+    width: 34px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 9px;
+    }
+    
+    &__search > a {
+        color: white;
+
+    }
+}

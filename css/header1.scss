@@ -1,0 +1,162 @@
+/*Top bar*/
+
+.top-bar {
+  color: rgb(177, 170, 170);
+  background-color: deeppink;
+
+  &__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon-list {
+    display: flex;
+    justify-content: row wrap;
+    align-items: center;
+  }
+
+  &__icon-list > li {
+    list-style-type: none;
+    margin: 8px;
+  }
+
+  &__icon-list > li > a {
+    color: white;
+  }
+
+  &__links-wrapper {
+    padding: 0 auto;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__links-wrapper > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*Top nav*/
+
+.top-nav {
+  &__logo-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: row wrap;
+    align-items: flex-start;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: row wrap;
+  }
+
+  &__menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  &__menu li {
+    padding: 16px;
+  }
+
+  &__menu li > a {
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: deeppink;
+
+      transition: all 0.35 ease-in-out 0s;
+    }
+  }
+
+  &__search {
+    background: deeppink;
+    color: white;
+    height: 37px;
+    width: 34px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 9px;
+  }
+
+  &__hamburger {
+    display: none;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__search > a {
+    color: white;
+  }
+}
+
+// khi man hinh thu nho
+@media only screen and (max-width: 767px) {
+  .top-nav {
+    position: relative;
+
+    &__hamburger {
+      display: block;
+
+      width: 35px;
+      height: 35px;
+
+      border: 1px solid black;
+      text-align: center;
+      font-size: 24px;
+      // margin-left: 13px;
+    }
+
+    &__menu-wrapper {
+      display: none;
+    }
+
+    &__search {
+      display: block;
+    }
+
+    &_menu {
+      position: absolute;
+      top: 100%;
+    }
+
+    &__hamburger > li {
+      color: black;
+      list-style-type: none;
+    }
+
+    &__hamburger > a {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+
+      transition: all 0.35s ease-in-out 0s;
+      white-space: nowrap;
+    }
+
+    &__hamburger:hover > &__menu {
+      display: block;
+    }
+  }
+}

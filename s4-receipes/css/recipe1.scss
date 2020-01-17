@@ -1,0 +1,116 @@
+/*main*/
+/*section hero*/
+
+.hero {
+    background-image: url(/images/images/page-top-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 70px;
+
+    &__title {
+    background-color: deeppink;
+    padding: 2px 16px;
+    font-size: 60px;
+    color: white; 
+    font-weight: bolder;   
+    }
+}
+
+/*section Recipe*/
+
+.recipe {
+// dong chu Lastest...
+
+    &_row1-color {
+        background-color: deeppink;
+        height: 7px;
+        padding: 0 50px;
+        display: inline-block;
+    }
+
+    &_row1-title {
+        padding-bottom: 10px;
+        font-size: 23px;
+        font-weight: bolder;
+        color:#474747;
+    }
+// ket tuc lastest....
+
+// thuc don 1 / phan row2  
+
+    &_row2-menu1 > img {
+        position: relative;
+        width: 100%;
+        vertical-align: middle;
+        height: auto;
+     }
+
+    &_detail {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+
+        width: 70%;
+        padding: 8px 16px;
+        
+        background-color: deeppink;
+    }
+
+    &_name {
+        color: white;
+    }
+
+    &_rating {
+        display: flex;
+        flex-flow: row nowrap;
+
+        list-style-type: none;
+    }
+
+    &_rating > li {
+        color: white;
+    }
+
+    &_rating > li.active {
+        color: yellow;
+    }
+
+    &_rating > li > i {
+        font-size: 10px;
+    }
+
+    &_row2-menu {
+    margin: -16px;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    }
+
+    &_row2-menu1 {
+        position: relative;
+        width: 33.333333%;
+        padding: 16px;
+    }
+
+// phan row 3, STT
+    &_row3 {
+        padding-top: 10px;;
+    }
+ul.recipe_row3-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &_row3-liststt {
+    display: inline-block;
+    background-color: deeppink;
+    margin: 26px;
+    padding: 10px 20px;
+    }
+
+    }

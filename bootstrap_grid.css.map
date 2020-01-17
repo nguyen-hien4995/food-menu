@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "bootstrap_grid.scss"
+    ],
+    "names": [],
+    "file": "bootstrap_grid.css"
+}

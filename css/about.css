@@ -1,0 +1,80 @@
+.hero {
+  background-image: url(/images/images/page-top-bg.jpg);
+  background-size: cover;
+  padding: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero__title {
+  background-color: deeppink;
+  color: white;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+/* section about*/
+
+.about-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.text > p {
+  font-size: 19px;
+  line-height: 33px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.text {
+  width: 50%;
+}
+
+/* .about-head {
+    padding-bottom: 10px;
+} */
+
+.read-more {
+  display: inline-block;
+  background-color: deeppink;
+  color: white;
+  padding: 10px;
+}
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+/* section fact*/
+.fact-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.fact-list img {
+  padding-left: 10px;
+}
+.fact-so {
+  font-size: 40px;
+  font-weight: bold;
+  color: gray;
+}
+
+.fact-chu {
+  font-weight: bold;
+}
+
+.hinh-fact {
+  text-align: center;
+}

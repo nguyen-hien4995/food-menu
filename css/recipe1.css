@@ -1,0 +1,136 @@
+/*main*/
+/*section hero*/
+.hero {
+  position: relative;
+  background-size: cover;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero__title {
+  position: absolute;
+  background-color: deeppink;
+  padding: 2px 16px;
+  font-size: 60px;
+  color: white;
+  font-weight: bolder;
+  top: 70px;
+}
+
+/*section Recipe*/
+.recipe {
+  margin: 50px;
+}
+
+.recipe_row1-color {
+  background-color: deeppink;
+  height: 7px;
+  padding: 0 50px;
+  display: inline-block;
+}
+
+.recipe_row1-title {
+  padding-bottom: 10px;
+  font-size: 23px;
+  font-weight: bolder;
+  color: #474747;
+}
+
+.recipe_row2-menu1 > img {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.recipe_detail {
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  width: 70%;
+  padding: 8px 16px;
+  background-color: deeppink;
+}
+
+.recipe_name {
+  color: white;
+}
+
+.recipe_rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style-type: none;
+}
+
+.recipe_rating > li {
+  color: white;
+}
+
+.recipe_rating > li.active {
+  color: yellow;
+}
+
+.recipe_rating > li > i {
+  font-size: 10px;
+}
+
+.recipe_row2-menu {
+  margin: -16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.recipe_row2-menu1 {
+  position: relative;
+  width: 33.333333%;
+  padding: 16px;
+}
+
+.recipe_row3 {
+  padding-top: 10px;
+}
+
+.recipe ul.recipe_row3-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe_row3-liststt {
+  display: inline-block;
+  background-color: deeppink;
+  margin: 26px;
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=recipe1.css.map */

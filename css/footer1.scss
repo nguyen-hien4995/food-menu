@@ -1,0 +1,47 @@
+.footer {
+  background-image: url(/images/images/footer-bg.jpg);
+
+  &-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+  }
+  &-icon {
+    // text-align: center;
+  }
+  &-icon > img {
+    padding-left: 20px;
+  }
+
+  &-iconlist {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: gray;
+  }
+
+  &-iconlist > li > a {
+    color: gray;
+  }
+
+  &-iconlist > li {
+    padding-right: 20px;
+  }
+
+  // footer menu
+  &-menu p {
+    text-align: center;
+  }
+  &-menulist {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,261 @@
+// background hero
+.hero {
+  position: relative;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+
+  // div tag
+  &_tag {
+    position: absolute;
+    margin: 30px;
+    // top: 200px;
+  }
+  // tag hồng
+  &_tag-tag1 {
+    background-color: deeppink;
+    color: white;
+
+    font-size: 50px;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    // transform: matrix(1, 0.1, 0.5, 0.6, 0, 0);
+  }
+  // tag xanh
+  &_tag-tag2 {
+    background-color: yellowgreen;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  // tag vàng
+  &_tag-tag3 {
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// section "review"
+
+// review cot 1/ rate
+.review {
+  &_rate-title {
+    color: dimgray;
+  }
+  &_rate-color {
+    color: deeppink;
+    width: 10px;
+    height: 5px;
+  }
+  &_rate-content1 {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: row wrap;
+    align-items: flex-start;
+  }
+  &_rate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &_rate-content--img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  &_rate--content-info {
+    padding-left: 30px;
+  }
+  .info1 {
+    color: deeppink;
+    font-size: 13px;
+  }
+  .info2 {
+    font-size: 16px;
+  }
+  .rating {
+    color: gold;
+  }
+}
+
+// review cot 2/ like
+.review {
+  &_like-title {
+    color: dimgray;
+  }
+  &_like-color {
+    color: deeppink;
+    width: 10px;
+    height: 5px;
+  }
+  &_like-content1 {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: row wrap;
+    align-items: flex-start;
+  }
+  &_like-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &_like-content--img img {
+    width: 80px;
+    height: 80px;
+  }
+  &_like--content-info {
+    padding-left: 30px;
+  }
+  .info1 {
+    color: deeppink;
+    font-size: 13px;
+  }
+  .info2 {
+    font-size: 16px;
+  }
+  .rating {
+    color: gold;
+  }
+}
+
+// review cot 3/ comment
+//
+
+.review {
+  padding-top: 10px;
+  &_comment {
+  }
+  &_comment-img {
+    position: relative;
+  }
+  &_comment-img > img {
+    width: 100%;
+  }
+  .img {
+    height: 10px;
+    width: 10px;
+  }
+
+  &_comment-date {
+    & p {
+      padding: 12px 8px 0px 12px;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+
+    color: white;
+    background-color: deeppink;
+  }
+  // comment text
+  &_comment-text {
+    position: relative;
+  }
+  &_comment {
+    padding: 25px;
+  }
+  h5 {
+    color: black;
+  }
+  .review_comment span {
+    color: deeppink;
+  }
+  .review_comment {
+    color: gray;
+    font-size: 15px;
+  }
+  .review_comment .comment {
+    color: black;
+    font-size: 13px;
+  }
+  .next-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: deeppink;
+    width: 41px;
+    height: 41;
+  }
+  .next-icon i {
+    color: white;
+    padding: 9px 7px 9px 17px;
+  }
+}
+
+// SECTION AVALUATE
+.evaluate {
+  padding: 65px 0;
+  background: #fdc856;
+}
+
+.evaluate1 {
+  margin-bottom: 10px;
+
+  &_items {
+    display: flex;
+    background: #fff;
+  }
+  &_img {
+    position: relative;
+  }
+  .evaluate1_img img {
+    width: 150px;
+    height: 150px;
+  }
+  &_text {
+    padding-left: 20px;
+  }
+  &_img-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: deeppink;
+    color: white;
+    width: 120px;
+
+    padding: 5px;
+  }
+
+  &_date {
+    padding-bottom: 2px;
+    color: deeppink;
+    font-size: 14px;
+  }
+
+  &_comment {
+    color: black;
+    font-size: 17px;
+  }
+  .rating {
+    color: gold;
+  }
+
+  &_person-img img {
+    width: 100%;
+
+    float: left;
+    border-radius: 100%;
+    height: 30%;
+    width: 30%;
+  }
+  &_person-name {
+    float: right;
+    padding-top: 15px;
+  }
+}

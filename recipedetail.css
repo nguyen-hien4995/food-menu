@@ -1,0 +1,176 @@
+.hero {
+  position: relative;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.beginer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.beginer_section {
+  padding-top: 10px;
+}
+
+.beginer_text1 {
+  color: white;
+  background-color: deeppink;
+  font-size: 15px;
+  height: 50px;
+  width: 150px;
+  padding: 12px 25px;
+}
+
+.beginer_text2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #474747;
+}
+
+.beginer_text3 {
+  font-size: 14px;
+  color: gray;
+  padding-bottom: 30px;
+}
+
+.beginer_rating {
+  color: gold;
+}
+
+.filter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.filter_wrap {
+  background-color: #eff3f7;
+}
+
+.filter_text {
+  padding: 6px 50px;
+  color: white;
+  background-color: deeppink;
+  height: 90px;
+  width: 250px;
+}
+
+.filter_down {
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.filter_down_down-ingredient {
+  font-weight: 600;
+}
+
+.check-wrap input[type="checkbox"] {
+  width: 27px;
+  height: 27px;
+  font-size: 14px;
+  -webkit-transition: border-color 0.25s ease-in-out;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.check-wrap input[type="checkbox"]:focus {
+  border-color: deeppink;
+}
+
+.check-wrap label {
+  line-height: 16px;
+}
+
+.check-form label {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 0 0 0 2rem;
+  cursor: pointer;
+}
+
+.check-form label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.check-form label::after {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check-form input[type="checkbox"] {
+  width: 0;
+  opacity: 0;
+}
+
+.check-form input[type="checkbox"]:checked + label::before {
+  background-color: deeppink;
+  border-color: deeppink;
+}
+
+.check-form input[type="checkbox"]:checked + label::after {
+  content: "";
+  border-color: white;
+}
+
+.detail_info {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.detail_info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail_info-list h2 {
+  font-weight: 700;
+  margin-bottom: -24px;
+  color: #474747;
+}
+
+.detail_info-list p {
+  padding-left: 70px;
+  color: gray;
+}
+/*# sourceMappingURL=recipedetail.css.map */
