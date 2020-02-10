@@ -1,27 +1,76 @@
+@keyframes zoom-in-pink {
+  from {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(6deg);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-animation {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.zoom-in-rotation-animation {
+  animation-name: zoom-in-pink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
 // background hero
-.hero {
-  position: relative;
+// .hero1 > img {
+//   width: 100%;
+// }
+
+.hero1 {
+  background-image: url(/images/images/slider-bg-2.jpg);
   background-size: cover;
+  padding: 70px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 
-  // div tag
-  &_tag {
-    position: absolute;
-    margin: 30px;
-    // top: 200px;
-  }
-  // tag hồng
   &_tag-tag1 {
     background-color: deeppink;
     color: white;
+    z-index: 5;
+    text-align: center;
 
     font-size: 50px;
     border-radius: 5px;
+    padding: 15px 60px 15px 60px;
 
-    padding: 10px;
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 
     // transform: matrix(1, 0.1, 0.5, 0.6, 0, 0);
   }
@@ -31,14 +80,30 @@
     color: white;
     font-size: 30px;
     border-radius: 5px;
+
+    text-align: center;
+
+    padding: 15px;
     margin: 10px;
+
+    animation-delay: 0.5s;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
   }
   // tag vàng
   &_tag-tag3 {
     background-color: orange;
     color: white;
     font-size: 20px;
+
+    text-align: center;
+
+    padding: 15px;
     border-radius: 5px;
+
+    animation-delay: 0.75s;
+
+    box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.4);
   }
 
   img {

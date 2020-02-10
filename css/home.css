@@ -1,6 +1,101 @@
-.hero {
-  position: relative;
+@-webkit-keyframes zoom-in-pink {
+  from {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(6deg);
+            transform: scale(1) rotate(6deg);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in-pink {
+  from {
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(6deg);
+            transform: scale(1) rotate(6deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoom-in {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-animation {
+  -webkit-animation-name: zoom-in;
+          animation-name: zoom-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.zoom-in-rotation-animation {
+  -webkit-animation-name: zoom-in-pink;
+          animation-name: zoom-in-pink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.hero1 {
+  background-image: url(/images/images/slider-bg-2.jpg);
   background-size: cover;
+  padding: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,41 +103,53 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero_tag {
-  position: absolute;
-  margin: 30px;
-}
-
-.hero_tag-tag1 {
+.hero1_tag-tag1 {
   background-color: deeppink;
   color: white;
+  z-index: 5;
+  text-align: center;
   font-size: 50px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px 60px 15px 60px;
+  -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
-.hero_tag-tag2 {
+.hero1_tag-tag2 {
   background-color: yellowgreen;
   color: white;
   font-size: 30px;
   border-radius: 5px;
+  text-align: center;
+  padding: 15px;
   margin: 10px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
-.hero_tag-tag3 {
+.hero1_tag-tag3 {
   background-color: orange;
   color: white;
   font-size: 20px;
+  text-align: center;
+  padding: 15px;
   border-radius: 5px;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.hero img {
+.hero1 img {
   width: 100%;
 }
 

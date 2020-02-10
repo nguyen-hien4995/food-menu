@@ -37,7 +37,9 @@
 /* .about-head {
     padding-bottom: 10px;
 } */
-
+.button {
+  margin: 10px;
+}
 .read-more {
   display: inline-block;
   background-color: deeppink;

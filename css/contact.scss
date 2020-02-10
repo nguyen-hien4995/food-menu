@@ -1,0 +1,103 @@
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-animation {
+  animation-name: zoom-in;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+.contact {
+  &__text {
+    padding-top: 20px;
+    padding-left: 7px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: #eff3f7;
+    border: 0;
+    padding: 0px 30px;
+
+    margin: 10px;
+    padding: 8px;
+    height: 50px;
+
+    font-style: italic;
+  }
+
+  &__input-text {
+    width: 100%;
+    background-color: #eff3f7;
+    border: 0;
+    padding: 8px;
+
+    margin: 10px;
+    height: 232px;
+
+    font-style: italic;
+  }
+
+  &__logo {
+    margin: 20px;
+  }
+
+  &__logo {
+  }
+
+  &__address {
+    padding-left: 70px;
+  }
+
+  &__list li {
+    margin: 10px;
+  }
+  &__list h6 {
+    text-decoration: underline;
+    color: deeppink;
+  }
+
+  &__social {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+  }
+
+  &__social a {
+    // padding-left: 3px;
+    padding-right: 20px;
+
+    color: gray;
+  }
+
+  &__button {
+    background-color: deeppink;
+
+    width: 95px;
+    height: 50px;
+  }
+
+  &__button-text {
+    display: inline;
+    padding: 5px;
+    margin-left: 9px;
+
+    font-size: 20px;
+    color: white;
+    background-color: deeppink;
+  }
+}
